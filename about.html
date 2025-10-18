@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Md. Jishan Ahmad Shipu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header class="header">
+  <h2 class="logo">Md. <span>Jishan</span> Ahmad Shipu</h2>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="img/img_ai.png" alt="Profile Picture">
+      </div>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p>
+          Hello! I’m <strong>Md. Jishan Ahmad Shipu</strong>, a passionate 
+          <span class="highlight">Lecturer in ICT</span> and 
+          <span class="highlight">Full Stack Developer</span>.  
+          I love inspiring students, mentoring juniors, and contributing to 
+          innovative projects in technology and education.  
+        </p>
+        <div class="about-info">
+          <p><i class="fas fa-envelope"></i> mdjas005@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +8801881381698</p>
+          <p><i class="fas fa-map-marker-alt"></i> Cumilla, Bangladesh</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="timeline">
+    <h2>Education</h2>
+    <div class="timeline-container">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>B.Sc. in Computer Science & Engineering</h3>
+          <p><strong>Bangladesh Army International University of Science and Technology (BAIUST)</strong></p>
+          <span>2020 - 2024</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p><strong>Cumilla Govt. College</strong></p>
+          <span>2018</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p><strong>Ibn Taimiya School and College</strong></p>
+          <span>2016</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="timeline">
+    <h2>Experience</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Lecturer (ICT)</h3>
+          <p><strong>The Carter Academy School & College</strong></p>
+          <span>2024(October 2') - Present</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Full Stack Web Development Intern</h3>
+          <p><strong>IPIT Ltd.</strong></p>
+          <span>2024</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Instructor & Mentor</h3>
+          <p><strong>BAIUST Computer Club</strong> — Programming sessions & guidance</p>
+          <span>2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="achievements-preview">
+    <h2>Key Achievements</h2>
+    <div class="achievement-cards">
+      <div class="card">
+        <i class="fas fa-trophy"></i>
+        <h3>5th Place</h3>
+        <p>IUPC BAIUST CSE Fest – 2022</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-medal"></i>
+        <h3>Promising Team</h3>
+        <p>Independent Day Programming Contest – 2023</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-award"></i>
+        <h3>Scholarship</h3>
+        <p>5th Place (Last Semester)</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Business Week 2023</h3>
+        <p>SME Segment – 1st Runner-up</p>
+      </div>
+    </div>
+    <a href="index.html#achievements" class="btn">See All Achievements</a>
+  </section>
+
+  <!-- Hobbies & Interests -->
+  <section class="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <div class="hobby-list">
+      <div class="hobby"><i class="fas fa-code"></i> Coding</div>
+      <div class="hobby"><i class="fas fa-chalkboard-teacher"></i> Teaching</div>
+      <div class="hobby"><i class="fas fa-book"></i> Reading</div>
+      <div class="hobby"><i class="fas fa-plane"></i> Traveling</div>
+      <div class="hobby"><i class="fas fa-music"></i> Music</div>
+    </div>
+  </section>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>

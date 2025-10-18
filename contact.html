@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Md. Jishan Ahmad Shipu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header class="header">
+  <h2 class="logo">Md. <span>Jishan</span> Ahmad Shipu</h2>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">Feel free to reach out for collaboration, project inquiries, or just to connect!</p>
+
+    <div class="contact-wrapper">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p><i class="fas fa-envelope"></i> mdjas005@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +8801881381698</p>
+        <p><i class="fas fa-map-marker-alt"></i> Cumilla, Bangladesh</p>
+        <div class="social-links">
+          <a href="file/Md. Jishan Ahmad Shipu_.pdf" target="_blank" title="Download CV"><i class="fas fa-file-pdf"></i></a>
+          <a href="https://wa.me/8801881381698" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/md-jishan-ahmad-shipu-54767a220/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Jishan37" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-container">
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="from_name" placeholder="Your Name" required />
+          <input type="email" name="from_email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  emailjs.init("6L6GwluaFHk_PTLL4"); // Your Public Key
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_twokm4b", "template_gt825o9", this)
+      .then(function() {
+        document.getElementById("form-status").innerText = "✅ Message sent successfully!";
+        document.getElementById("form-status").style.color = "lightgreen";
+      }, function(error) {
+        console.error("EmailJS Error:", error); // Shows error details in console
+        document.getElementById("form-status").innerText = "❌ Failed to send message. Try again!";
+        document.getElementById("form-status").style.color = "red";
+      });
+  });
+</script>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>

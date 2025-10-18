@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Md. Jishan Ahmad Shipu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <!-- Header -->
+<header class="header">
+  <h2 class="logo">Md. <span>Jishan</span> Ahmad Shipu</h2>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+
+    <!-- Mobile & Web Apps -->
+    <div class="project-section" data-aos="fade-up">
+      <h2 class="section-title">📱 Mobile & Web Applications</h2>
+      <div class="project-container">
+        
+        <div class="project-card" data-aos="zoom-in">
+          <h2>HosPito App</h2>
+          <p class="desc">Providing users with hospital listings, doctor recommendations, diagnostics, ambulance services, health tips and BMI checks.</p>
+          <p class="details"><b>Framework:</b> Flutter | <b>Language:</b> Dart</p>
+          <a href="https://github.com/Jishan37/robi_apps" target="_blank" class="btn">🔗 GitHub Repo</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+          <h2>CPC App</h2>
+          <p class="desc">A demo mobile application for the Computer & Programming Club of Daffodil International University.</p>
+          <p class="details"><b>Framework:</b> Flutter | <b>Language:</b> Dart</p>
+          <br><a href="https://github.com/Jishan37/robi_apps" target="_blank" class="btn">🔗 GitHub Repo</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+          <h2>Office Management System</h2>
+          <p class="desc">Developed using C# and .NET Framework for efficient office administration.</p>
+          <p class="details"><b>Backend:</b> MySQL | <b>Language:</b> C#</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Academic & Internship Projects -->
+    <div class="project-section" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="section-title">💻 Academic & Internship Projects</h2>
+      <div class="project-container">
+
+        <!-- Farid Group Project with Live Link -->
+        <div class="project-card" data-aos="zoom-in">
+          <h2>Farid Group - [SADD Project]</h2>
+          <p class="desc">A corporate website for a leading manufacturer in Bangladesh, enabling product sales and management.</p>
+          <p class="details"><b>Frontend:</b> HTML, CSS | <b>Backend:</b> JavaScript</p>
+          <a href="https://jishan37.github.io/Farid-Group/" target="_blank" class="btn">🔗 Live Website</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+          <h2>Lazeez Food Delivery App</h2>
+          <p class="desc">A homemade fast food delivery app ensuring seamless coordination between customers and owners.</p>
+          <p class="details"><b>Frontend:</b> HTML, CSS, Bootstrap | <b>Backend:</b> Spring Boot</p>
+          <br><a href="https://github.com/Jishan37/robi_apps" target="_blank" class="btn">🔗 GitHub Repo</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+          <h2>Fragrance Heaven - [Internship Project]</h2>
+          <p class="desc">A web app developed for an online perfume business during internship.</p>
+          <p class="details"><b>Frontend:</b> React | <b>Backend:</b> Node.js</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="project-card" data-aos="zoom-in">
+  <h2>Robi Apps</h2>
+  <p class="desc">A Flutter mobile app repository hosted on GitHub. Demonstrates app features, UI, and functionality for mobile usage.</p>
+  <p class="details"><b>Framework:</b> Flutter | <b>Language:</b> Dart</p>
+  <a href="https://github.com/Jishan37/robi_apps" target="_blank" class="btn">🔗 GitHub Repo</a>
+</div>
+<br><br>
+<div class="project-card" data-aos="zoom-in">
+  <h2>PUBLICATIONS</h2>
+  <p class="desc">Journal: “Enhancing Security and Transparency in Satellite Data Transactions Using Ethereum-Based Blockchain”  
+                  Author: <b>Md. Jishan Ahmad Shipu*</b>, Sumaiya Hussain Tanha, M.M Habib, Saha Reno</p>
+  <p class="details"><b>  Year: 2024, Review in Progress (Automatic Control and Computer Sciences). </b></p>
+  <a href="https://github.com/Jishan37/satellite-blockchain-paper" target="_blank" class="btn">🔗 GitHub Repo</a>
+</div>
+
+  </section>
+  
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>

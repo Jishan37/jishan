@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Md. Jishan Ahmad Shipu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header class="header">
+  <h2 class="logo">Md. <span>Jishan</span> Ahmad Shipu</h2>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h1>My Skills</h1>
+    <p class="skills-intro">
+      I specialize in web development, programming, ICT teaching, and motivational speaking.  
+      Here are some of my technical and professional skills:
+    </p>
+
+    <div class="skills-container">
+      <!-- Technical Skills -->
+      <div class="skills-box">
+        <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+
+        <div class="skill">
+          <p>HTML / CSS</p>
+          <div class="progress"><span style="width: 95%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress"><span style="width: 85%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>Python</p>
+          <div class="progress"><span style="width: 80%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>C</p>
+          <div class="progress"><span style="width: 90%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>C#</p>
+          <div class="progress"><span style="width: 70%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>C++</p>
+          <div class="progress"><span style="width: 85%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>Java</p>
+          <div class="progress"><span style="width: 85%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>LaTeX</p>
+          <div class="progress"><span style="width: 80%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>Canva</p>
+          <div class="progress"><span style="width: 90%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>PHP & MySQL</p>
+          <div class="progress"><span style="width: 75%;"></span></div>
+        </div>
+
+        <div class="skill">
+          <p>React & Node.js</p>
+          <div class="progress"><span style="width: 70%;"></span></div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="skills-box">
+        <h2><i class="fas fa-user-tie"></i> Professional Skills</h2>
+        <div class="soft-skill"><i class="fas fa-comments"></i> Communication</div>
+        <div class="soft-skill"><i class="fas fa-users"></i> Teamwork</div>
+        <div class="soft-skill"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+        <div class="soft-skill"><i class="fas fa-chalkboard-teacher"></i> Teaching</div>
+        <div class="soft-skill"><i class="fas fa-microphone"></i> Motivational Speaker</div>
+        <div class="soft-skill"><i class="fas fa-plane"></i> Travelling & Exploration</div>
+        <div class="soft-skill">
+    <a href="https://judge.beecrowd.com/en/profile/536562" target="_blank"><i class="fas fa-code"></i>Coding</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>

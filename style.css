@@ -853,8 +853,8 @@ body {
     }
 
     .home .image .profile-pic {
-        width: 280px;
-        height: 280px;
+        width: 480px;
+        height: 480px;
         border-radius: 50%;
         object-fit: cover;
     }
